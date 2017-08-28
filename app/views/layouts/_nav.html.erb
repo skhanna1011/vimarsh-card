@@ -1,0 +1,8 @@
+<nav class="outer nav navbar-inverse" role="navigation">
+  <ul class="nav navbar-nav">
+    <li class="space <%= 'active' if params[:controller] == 'home' %>"><%= link_to "Home", home_index_path %></li>
+    <li class="space <%= 'active' if params[:controller] == 'events' %>"><%= link_to "Events", events_path %></li>
+    <li class="space <%= 'active' if params[:controller] == 'guests' && params[:action] == 'index' %>"><%= link_to "Guestbook", guests_path %></li>
+    <li class="space <%= 'active' if params[:controller] == 'guests' && params[:action] == 'new' %>"><%= link_to "R.S.V.P.", new_guest_path %></li>
+  </ul>
+</nav>
